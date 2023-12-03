@@ -13,6 +13,7 @@ public class MenuManager : MonoBehaviour
     {
         settingPanel = GameObject.FindGameObjectWithTag("ControlPanel");
         informationPanel = GameObject.FindGameObjectWithTag("VersionPanel");
+        settingPanel.SetActive(false);
     }
 
     // Update is called once per frame
