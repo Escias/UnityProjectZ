@@ -38,10 +38,8 @@ public class EnemyAttack : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(attack);
         if (attack && other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Touch Player");
             GameObject EntityHit = other.gameObject;
             playerHealth = EntityHit.GetComponent<PlayerHealth>();
             playerHealth.TakeDamage(0.05f);

@@ -25,15 +25,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log(damage);
         if (healthRemain <= 1)
         {
             healthRemain -= damage;
             if (healthRemain <= 0)
             {
                 healthRemain = 0;
-                playerAnimations.Death();
                 playerAlive = false;
+                playerAnimations.Death();
             }
         }
     }

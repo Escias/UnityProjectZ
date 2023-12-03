@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private TMP_Text m_CountDownText;
 
-    public GameObject gameOverPanel;
+    GameObject gameOverPanel;
 
     Coroutine c_CountdownNextWave;
 
